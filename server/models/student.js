@@ -17,10 +17,10 @@ class Student {
     static findById(id) {
         try {
             const studentData = studentsData.filter((student) => student.id === id)[0];
-            const student = new Cat(studentData);
+            const student = new Student(studentData);
             return student;
         } catch (err) {
-            throw new Error('That student does not exist!');
+            throw new Error('That student is not a member of the cohort (yet)!!');
         }
     }
 

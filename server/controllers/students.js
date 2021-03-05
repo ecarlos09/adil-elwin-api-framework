@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Cat = require('../models/student');
+const Student = require('../models/student');
 
 router.get('/', (req, res) => {
     const studentsData = Student.all;
