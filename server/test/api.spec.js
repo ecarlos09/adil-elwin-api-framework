@@ -12,7 +12,7 @@ describe('API server', () => {
         });
     });
 
-    afterAll(() => {
+    afterAll((done) => {
         console.log('Server stopped')
         api = app.close(done);
     });
