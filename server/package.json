@@ -1,11 +1,12 @@
 {
-  "name": "server",
+  "name": "app",
   "version": "1.0.0",
   "description": "Adil and Elwin's api framework",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "test": "jest --silent --watchAll",
+    "coverage": "jest --coverage --silent"
   },
   "author": "Adil and Elwin",
   "license": "MIT",
